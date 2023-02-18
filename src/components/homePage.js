@@ -16,6 +16,7 @@ function HomePage() {
   return (
     <div className={"w-full md:px-[120px] md:pt-8 md:pb-5 px-4 pb-4 pt-3"}>
       <Header />
+      <p>hhgfvhgfhgf</p>
       <div className="w-full flex gap-x-4 my-4">
         <TopSliderRight />
         <TopSliderLeft />
