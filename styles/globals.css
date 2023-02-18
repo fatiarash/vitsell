@@ -79,20 +79,62 @@
   margin: 0;
 }
 
+p {
+  color: black;
+}
+
+li {
+  color: black;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  direction: rtl;
+}
+
+.swip .swiper-slide {
+  width: 100% !important;
+}
+
+.swiper-button-prev:after {
+  margin-left: 47px !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 10px;
+  color: black;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 10px;
+  color: black;
+  margin-right: 21px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  font-family: "IRANSans";
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@font-face {
+  font-family: "IRANSans";
+  font-weight: 400;
+  src: url("../public/fonts/IRANSansWeb.woff");
 }
 
 a {
